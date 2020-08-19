@@ -3,10 +3,9 @@
 # Run with -DTEST=ON to build unit tests
 
 PROJECT ( YUV C CXX )	# "C" is required even for C++ projects
-CMAKE_MINIMUM_REQUIRED( VERSION 2.8 )
+CMAKE_MINIMUM_REQUIRED( VERSION 3.1 )
 OPTION( TEST "Built unit tests" OFF )
 
-add_definitions(-std=c++11)
 
 SET ( ly_base_dir	${PROJECT_SOURCE_DIR} )
 SET ( ly_src_dir	${ly_base_dir}/source )
